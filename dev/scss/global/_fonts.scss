@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica-BoldOblique.eot');
+    src: url('#{$font-path}/Helvetica-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica-BoldOblique.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica-BoldOblique.woff') format('woff'),
+        url('#{$font-path}/Helvetica-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica-Light.eot');
+    src: url('#{$font-path}/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica-Light.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica-Light.woff') format('woff'),
+        url('#{$font-path}/Helvetica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica-Bold.eot');
+    src: url('#{$font-path}/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica-Bold.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica-Bold.woff') format('woff'),
+        url('#{$font-path}/Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica.eot');
+    src: url('#{$font-path}/Helvetica.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica.woff') format('woff'),
+        url('#{$font-path}/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica-Compressed.eot');
+    src: url('#{$font-path}/Helvetica-Compressed.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica-Compressed.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica-Compressed.woff') format('woff'),
+        url('#{$font-path}/Helvetica-Compressed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/HelveticaRounded-Bold.eot');
+    src: url('#{$font-path}/HelveticaRounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/HelveticaRounded-Bold.woff2') format('woff2'),
+        url('#{$font-path}/HelveticaRounded-Bold.woff') format('woff'),
+        url('#{$font-path}/HelveticaRounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('#{$font-path}/Helvetica-Oblique.eot');
+    src: url('#{$font-path}/Helvetica-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Helvetica-Oblique.woff2') format('woff2'),
+        url('#{$font-path}/Helvetica-Oblique.woff') format('woff'),
+        url('#{$font-path}/Helvetica-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('#{$font-path}/RockSalt.eot');
+    src: url('#{$font-path}/RockSalt.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/RockSalt.woff2') format('woff2'),
+        url('#{$font-path}/RockSalt.woff') format('woff'),
+        url('#{$font-path}/RockSalt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

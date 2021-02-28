@@ -1,0 +1,38 @@
+.hero{
+    overflow: hidden;
+    &__img{
+        overflow: visible;
+        &::before{
+            padding-top: 57.78%;
+        }
+        img{
+            position: absolute;
+            left: 0;
+            width: 100vw !important;
+            padding: rem(30px 0px 30px 30px);
+            height: 100%;
+            object-fit: cover;
+            object-position: center -30px;
+            @include respond-above(md) {
+                padding: rem(40px 0px 40px 40px);
+            }
+            @include respond-above(lg) {
+                padding: rem(50px 0px 50px 50px);
+            }
+            @include respond-above(xl) {
+                object-position: center -70px;
+            }
+    
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100vw;
+            left: 0;
+            height: 100%;       
+            top: 0;
+            z-index: -1;
+            @extend .bg-secondary;
+        }
+    }
+}

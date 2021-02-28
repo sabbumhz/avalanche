@@ -1,0 +1,110 @@
+.header{
+    &__top{
+        padding:rem(18px 0);
+        @include respond-above(md) {
+            padding:rem(24px 0)
+        }
+        @include respond-above(lg) {
+            padding:rem(34px 0)
+        }
+    }
+    &__right{
+        &-list{
+            border-left: 1px solid $gray-800;
+            padding: rem(0 12px);
+            margin:0;
+            &:first-child{
+                border-left:0;
+                padding-left:0;
+            }
+        }
+    }
+    &__main{
+        @include respond-above(md) {
+            padding-bottom: rem(24px);
+        }
+        @include respond-above(lg) {
+            padding-bottom: rem(32px);
+        }
+        .navbar-collapse.show{
+            position: relative;
+            &:after{
+                @include respond-below(md) {
+                    content: '';
+                    position: absolute;
+                    width: 100vw;
+                    height: 1px;
+                    background-color: $pink-lt;
+                    top: -4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .form-input{
+        width:100%;
+    }
+    .form-control{
+        background-color: $secondary;
+        color:$gray-800;
+        border:0 !important;
+        font-size:rem(14px);
+        border-radius:rem(30px);
+        padding: rem(4px 16px);
+        @include media-breakpoint-up(md) {
+            font-size:rem(16px);
+         }
+        &:focus{
+            outline:none;
+        }
+    }
+    .search-btn{
+        position: absolute;
+        right: calc(12px);
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+}
+
+.logo{
+    margin:rem(20px) auto;
+    max-width:rem(162px);
+    @include media-breakpoint-up(md) {
+        max-width:rem(218px);
+        margin:auto;
+     }
+     img{
+         width:100%;
+     }
+}
+
+.nav{
+    &-item{
+        padding: rem(0 10px);
+        @include respond-above(md) {
+            padding: rem(0 12px);
+        }
+        @include respond-above(xl) {
+            padding: rem(0 18px);
+        }
+    }
+    &-link{
+        color: $gray-800;
+        &.active,
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+.navbar{
+    &-nav{
+        width: 100%;
+    }
+}
+
+.ads-bar{
+    padding: rem(4px 0);
+}

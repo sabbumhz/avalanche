@@ -1,0 +1,123 @@
+.styleguide {
+    background: #eee;
+    &-wrap {
+        padding: 15px 15px 0;
+        @media (min-width: 991px) {
+            padding: 45px 35px 0;
+        }
+    }
+    &-header {
+        border-bottom: 1px solid #eee;
+        padding: 0 0 20px;
+        h4 {
+            font-size: 35px;
+            color: #000;
+        }
+    }
+    h5 {
+        font-family: 'fontbold';
+        font-size: 30px;
+        color: #000;
+    }
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    padding-top: 35px;
+    .list-group-item {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #dacccc;
+        margin-bottom: 15px;
+        padding: 0 0 15px;
+        &::before {
+            display: none;
+        }
+        > a {
+            font-size: 18px;
+            color: #404040;
+            text-decoration: none;
+            &:hover {
+                color: #FB6538;
+            }
+            &::after {
+                display: none;
+            }
+            &.active {
+                color: #FB6538;
+            }
+        }
+    }
+}
+
+.spanner-height {
+    height: 200px;
+}
+
+.bg-light-grey {
+    background: #eee;
+}
+
+
+.content-wrap {
+    &#typography {
+        .col-lg-4 {
+            h5 {
+                font-size: 20px;
+                font-family: 'fontregular';
+            }
+        }
+    }
+    border-bottom: 1px solid #dfd2d2;
+    padding: 20px 0 50px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    &:last-of-type {
+        border: none;
+    }
+    code {
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 7px 8px;
+        border-radius: 4px;
+        color: #ffc107;
+        font-size: 15px;
+        margin: 10px 0 0;
+        display: inline-block;
+    }
+    pre {
+        background-color: transparent;
+        padding: 30px;
+        white-space: pre-wrap;
+        white-space: normal;
+        margin-bottom: 50px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        code {
+            display: block;
+            color: #ffc107;
+            padding: 15px;
+            white-space: normal;
+        }
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.font-size {
+    &-5 {
+        font-size: 5px;
+    }
+    &-20 {
+        font-size: 20px;
+    }
+    &-25 {
+        font-size: 25px;
+    }
+    &-30 {
+        font-size: 30px;
+    }
+}

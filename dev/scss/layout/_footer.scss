@@ -1,0 +1,48 @@
+.footer{
+    background-color: $primary;
+    &__top{
+        padding-top: rem(25px);
+        @include respond-above(md) {
+            padding-top: rem(45px);
+        }
+        @include respond-above(lg) {
+            padding-top: rem(65px);
+            padding-bottom: rem(15px);
+        }
+    }
+    &__title{
+        color: $white;
+        padding-bottom: rem(10px);
+    }
+    &__menu{
+        margin-bottom: rem(40px);
+        padding: 0;
+        &-list{
+            list-style: none;
+            padding: rem(2px 0)
+        }
+        &-link{
+            color: $white;
+            &:hover{
+                color: $pink-lt;
+            }
+        }
+    }
+    &__bottom{
+        color: $white;
+        border-top: 1px solid $pink-lt;
+        padding: rem(20px 0);
+        @include respond-above(md) {
+            padding: rem(40px 0);
+        }
+        @include respond-above(lg) {
+            padding: rem(60px 0);
+        }
+    }
+}
+
+.social-icon{
+    &__link{
+        padding: rem(0 6px);
+    }
+}

@@ -1,0 +1,63 @@
+.btn{
+    background-color: $pink-md;
+    border: 0;
+    padding: rem(10px 40px);
+    border-radius: rem(12px);
+    font-size: rem(16px);
+    text-transform: uppercase;
+    @include respond-above(md) {
+        padding: rem(12px 60px);
+        font-size: rem(20px);
+    }
+    @include respond-above(lg) {
+        padding: rem(16px 80px);
+        font-size: rem(24px);
+    }
+    &:not(:disabled):active,
+    &:active,
+    &:focus,
+    &:hover{
+        background-color: transparent;
+        border: transparent;
+        box-shadow: none;
+        outline: none;
+    }
+    &-primary{
+        background-color: $pink-md;
+        color: $white;
+        &:hover{
+            background-color: $primary;
+        }
+    }
+    &-secondary{
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        font-weight: 600;
+        &:hover{
+            border: 1px solid $white;
+            background-color: transparent;
+            color: $white;
+        }
+    }
+    &-arw{
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        color: $gray-800;
+        position: relative;
+        padding-right: 32px;
+        &:hover{
+            background-color: transparent;
+            &::after{
+                right: 0;
+            }
+        }
+        &::after{
+            position: absolute;
+            content: url('../images/svg/arrow.svg');
+            right: 6px;
+            transition: right 0.5s ease;
+        }
+    }
+}

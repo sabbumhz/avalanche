@@ -1,0 +1,35 @@
+<section id="section-01" class="section section-01">
+    <div class="container">
+        <h3 class="section__title text-uppercase text-center">
+            Shop by collection
+        </h3>
+        <div class="row ">
+            <div class="col-md-6 section-01__col">
+                @@include('../card/card-01.html',{
+                    "title":"women",
+                    "link":"#",
+                    "image":"images/one.jpg"
+                })
+            </div>
+            <div class="col-md-6 section-01__col">
+                <div class="row flex-column">
+                    <div class="col">
+                        @@include('../card/card-02.html',{
+                            "title":"men",
+                            "link":"#",
+                            "image":"images/three.jpg"
+                        })
+                    </div>
+                    <div class="col">
+                        @@include('../card/card-02.html',{
+                            "title":"Kids",
+                            "link":"#",
+                            "image":"images/two.jpg"
+                        })
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

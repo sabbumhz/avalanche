@@ -1,0 +1,49 @@
+.slider{
+    &-01{
+        .item{
+            &:nth-child(even){
+                .row{
+                    justify-content: flex-end;
+                }
+                .btn{
+                    border-color:$primary ;
+                    color:$primary;
+                }
+                .card-05{
+                    &__wrap{
+                        text-align: right;
+                    }
+                    &__title,
+                    &__category{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: rem(20px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        li{
+            list-style: none;
+            width: 16px;
+            height: 16px;
+            background-color: $white;
+            border-radius: 50%;
+            opacity: 0.5;
+            margin-left: rem(8px);
+            margin-right: rem(8px);
+            cursor: pointer;
+            &.slick-active{
+                opacity: 1;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+
+}

@@ -1,0 +1,101 @@
+.section{
+    padding: rem(40px 0);
+    @include respond-above(md) {
+        padding: rem(60px 0);
+    }
+    @include respond-above(lg) {
+        padding: rem(80px 0);
+    }
+    @include respond-above(xl) {
+        padding: rem(100px 0);
+    }
+    &__title{
+        color: $primary;
+        padding-bottom: rem(20px);
+        @include respond-above(md) {
+            padding-bottom: rem(40px);
+        }
+        @include respond-above(lg) {
+            padding-bottom: rem(60px);
+        }
+    }
+    &-01{
+        &__col{
+            margin-bottom: 40px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @include respond-above(md) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &-02{
+        background-color: $secondary;
+        padding: rem(30px 0);
+        @include respond-above(sm) {
+            padding: rem(40px 0);
+        }
+        @include respond-above(md) {
+            padding: rem(60px 0);
+        }
+        @include respond-above(lg) {
+            padding: rem(80px 0);
+        }
+        @include respond-above(xl) {
+            padding: rem(100px 0);
+        }
+        @include respond-above(xxl) {
+            padding: rem(130px 0);
+        }
+        .btn{
+            margin-top: rem(32px);
+        }
+    }
+    &-03{
+        overflow: hidden;
+        &__col{
+            margin-bottom: rem(40px);
+        }
+        &__title{
+            padding-bottom: rem(60px);
+            @include respond-above(md) {
+                padding-bottom: rem(80px);
+            }
+            @include respond-above(lg) {
+                padding-bottom: rem(110px);
+            }
+        }
+        &__wrap{
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                width: 50vw;
+                height: auto;
+                background-color: $pink-lt;
+                right: 50%;
+                margin-right: -50vw;
+                top: -30px;
+                bottom: 0px;
+                @include respond-above(md) {
+                    top: -40px;
+                }
+                @include respond-above(lg) {
+                    top: -50px;
+                    bottom: -10px;
+                }
+            }
+        }
+    }
+    &-05{
+        .row{
+            margin: 0;
+        }
+        &__col{
+            padding: 0;
+        }
+    }
+
+}
+
